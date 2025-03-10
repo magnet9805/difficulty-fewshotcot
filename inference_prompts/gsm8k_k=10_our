@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Mr. Maximilian is a dairy animal farmer and has 140 cows on his farm. Forty percent of the cows on his farm have a red spot, 25 percent of the cows without a red spot have a blue spot and the remaining cows do not have any spot. How many cows on the farm have no spot?\nA:",
+            "rationale": "Let's think step by step. If Mr. Maximilian has 140 cows and 40% of them have red spots, then 40/100*140 = <<140*40/100=56>>56 cows have red spots.\nThe number of cows with no red spot is 140-56 = <<140-56=84>>84 cows.\nOut of the 84 cows without a red spot, 25% of them have a blue spot, a total of 25/100*84 = <<25/100*84=21>>21 cows.\nThe number of cows without any spot is 84-21 =<<84-21=63>>63 animals.",
+            "pred_ans": "63"
+        },
+        {
+            "question": "Q: Charlie can make 5350 steps while running on a 3-kilometer running field. If he can run around the field 2 1/2 times during a running session, how many steps was he able to make?\nA:",
+	        "rationale": "Let's think step by step. Charlie's steps for 3 kilometers is 5350 x 2 = <<5350*2=10700>>10700 steps were made when he run twice the field.\nSince he has run half of the field 5350 / 2 = <<5350/2=2675>>2675 steps were made when he runs half of the 3-kilometer field.\nTherefore, Charlie was able to make 10700 + 2675 = <<10700+2675=13375>>13375 steps for the 2 and a half run around the field.",
+            "pred_ans": "13375"
+        },
+        {
+            "question": "Q: Micah, Dean, and Jake are all training for a marathon organized by a local NGO to support children in their town who have cancer. Micah runs 2/3 times as fast as Dean. It takes Jake 1/3 times more time to finish the marathon than it takes Mica. If Dean takes 9 hours, what's the total time the three take to complete the marathon?\nA:",
+    	    "rationale": "Let's think step by step. If Dean takes 9 hours to finish the marathon, it takes Micah 2/3 * 9 hours = <<9*2/3=6>>6 hours to finish the marathon.\nIt takes Jake 1/3 * 6 hours = <<1/3*6=2>>2 more hours to finish the marathon than Micah.\nJake takes a total of 6 hours + 2 hours = <<6+2=8>>8 hours to finish the marathon.\nMicah, Dean, and Jake take a total of 8 hours + 6 hours + 9 hours = <<8+6+9=23>>23 hours to finish the marathon.",
+            "pred_ans": "23"
+        },
+        {
+            "question": "Q: Mary bought a packet of 1500 stickers. She shared them between Susan, Andrew and Sam in the ratio 1:1:3 respectively. If Sam gave Andrew two-thirds of his own share, how many stickers does Andrew now have?\nA:",
+	        "rationale": "Let's think step by step. The sum of the ratio is 1+1+3 = 5, therefore each part is 1500/5 = 300 stickers\nSam got 3 parts for a total of 3*300 = <<3*300=900>>900 stickers\nHe gave two-thirds of this which is 900*(2/3) = <<900*(2/3)=600>>600 stickers to Andrew\nAndrew had one part already, which is 1*300 = <<1*300=300>>300\nAndrew now has a total of 300+600 = <<300+600=900>>900 stickers.",
+            "pred_ans": "900"
+        },
+        {
+            "question": "Q: Kelsey had 2/5 of a tray of eggs that she had brought to Willa's party. Stephanie had also brought half a tray of eggs to the party, while Alayah brought 40 more eggs than Kelsey and Stephanie combined. If Willa had two trays of eggs already, calculate the total number of eggs that were used at the party.\nA:",
+            "rationale": "Let's think step by step. A tray of eggs has 30 eggs, so Kelsey brought 2/5*30 = <<30*2/5=12>>12 eggs\nOn the other hand, Stephanie brought 1/2*30 = <<1/2*30=15>>15 eggs to the party.\nThe total number of eggs that Kelsey and Stephanie brought to Willa's party is 15+12 =<<15+12=27>>27\nAlayah brought 27+40 = <<27+40=67>>67 eggs, 40 more than the number brought by Kelsey and Stephanie combined.\nTogether with Aliyah's eggs, there were a total of 67+27 = <<67+27=94>>94\nWilla also had 2*30 = <<2*30=60>>60 eggs from the two trays she had.\nIn total, there were 94+60 = <<94+60=154>>154 eggs used at the party.",
+            "pred_ans": "154"
+        },
+        {
+            "question": "Q: Janet uses her horses' manure as fertilizer. One horse produces 5 gallons of fertilizer per day. Once Janet has collected enough fertilizer, she'll spread it over 20 acres of farmland. Each acre needs 400 gallons of fertilizer and Janet can spread fertilizer over 4 acres per day. If Janet has 80 horses, how long will it take until all her fields are fertilized?\nA:",
+	        "rationale": "Let's think step by step. First find the total amount of fertilizer the horses produce per day: 5 gallons/horse * 80 horses = <<5*80=400>>400 gallons\nThen multiply the number of acres of farmland by the number of gallons per acre to find the total amount of fertilizer needed: 400 gallons/acre * 20 acres = <<400*20=8000>>8000 gallons\nThen divide the total amount of fertilizer needed by the amount of fertilizer produced per day to find the number of days needed to collect fertilizer: 8000 gallons / 400 gallons/day = <<8000/400=20>>20 days\nThen divide the total number of acres Janet needs to cover by the number of acres she can cover per day to find how many days it takes her to cover them all: 20 acres / 4 acres/day = <<20/4=5>>5 days\nThen add the time to collect the fertilizer to the time to spread it to find the total time: 5 days + 20 days = <<5+20=25>>25 days",
+            "pred_ans": "25"
+        },
+        {
+            "question": "Q: John adopts a dog from a shelter.  The dog ends up having health problems and this requires 3 vet appointments,  which cost $400 each.  After the first appointment, John paid $100 for pet insurance that covers 80% of the subsequent visits.  How much did he pay in total?\nA:",
+            "rationale": "Let's think step by step. He got a discount of 400*.8=$<<400*.8=320>>320\nHe got that discount for 3-1=<<3-1=2>>2 visits\nSo each of those visits cost 400-320=$<<400-320=80>>80\nSo he paid 2*80=$<<2*80=160>>160 for those visits\nThat means he paid a total of 400+160+100=$<<400+160+100=660>>660",
+            "pred_ans": "660"
+        },
+        {
+            "question": "Q: John is performing in 3 plays.  Each play has 5 Acts.  He wears 2 wigs per act.  Each wig cost $5.  He drops one of the plays and sells all of the wigs for that play for $4.  How much money did he spend?\nA:",
+	        "rationale": "Let's think step by step. He used 5*2=<<5*2=10>>10 wigs per play\nSo in total, he used 10*3=<<10*3=30>>30 wigs\nThey cost 30*5=$<<30*5=150>>150\nHe gets back 10*4=$<<10*4=40>>40 from selling the wigs\nSo he spent 150-40=$<<150-40=110>>110",
+            "pred_ans": "110"
+        }
+    ]
+}

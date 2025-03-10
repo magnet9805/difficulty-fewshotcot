@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: A package of candy has 3 servings with 120 calories each.  John eats half the package.  How many calories did he eat?\nA:",
+            "rationale": "Let's think step by step. There were 3*120=<<3*120=360>>360 calories in the package\nSo he ate 360/2=<<360/2=180>>180 calories",
+            "pred_ans": "180"
+        },
+        {
+            "question": "Q: John worked 8 hours a day every day from the 3rd to the 8th, including the 3rd and not including the 8th.  How many hours did he work?\nA:",
+	        "rationale": "Let's think step by step. He worked for 8-3=<<8-3=5>>5 days\nSo he worked for 5*8=<<5*8=40>>40 hours",
+            "pred_ans": "40"
+        },
+        {
+            "question": "Q: Donny has $78 in his piggy bank. If Donny buys a kite for $8 and a frisbee for $9. How much money does Donny have left?\nA:",
+    	    "rationale": "Let's think step by step. Donny has 78 - 8 = <<78-8=70>>70 after paying for the kite.\nHe has 70 - 9 = $<<70-9=61>>61 left after buying the frisbee as well as the kite.",
+            "pred_ans": "61"
+        },
+        {
+            "question": "Q: Sharon\u2019s vacation rental has a Keurig coffee machine.  She will be there for 40 days.  She has 3 cups of coffee (3 coffee pods) every morning.  Her coffee pods come 30 pods to a box for $8.00.  How much will she spend on coffee to last her for the entire vacation?\nA:",
+	        "rationale": "Let's think step by step. She'll be on vacation for 40 days and drinks 3 cups of coffee/pods per day for a total of 40*3 = <<40*3=120>>120 coffee pods\nHer coffee pods come 30 in a box and she needs 120 coffee pods so that\u2019s 120/30 = <<120/30=4>>4 boxes\nEach box costs $8.00 and she needs 4 boxes so that\u2019s 8*4 = $<<8*4=32.00>>32.00",
+            "pred_ans": "32"
+        },
+        {
+            "question": "Q: Meryll wants to write 35 multiple-choice questions and 15 problem-solving questions for her Chemistry class. She already has written 2/5 of the multiple-choice and 1/3 of the problem-solving questions. How many more questions does she need to write for both multiple-choice and problem-solving?\nA:",
+            "rationale": "Let's think step by step. Meryll has written 35 questions x 2/5 = <<35*2/5=14>>14 multiple-choice questions.\nWhile she has written 15 questions x 1/3 = <<15*1/3=5>>5 problem-solving questions.\nThe total number of questions that Meryll has to write is 35 questions + 15 questions = <<35+15=50>>50 questions.\nMeryll has written a total of 14 questions + 5 questions = <<14+5=19>>19 questions.\nHence, she needs to write 50 questions - 19 questions = <<50-19=31>>31 questions more.",
+            "pred_ans": "31"
+        },
+        {
+            "question": "Q: John trains for ultramarathons.  He starts only able to run 8 hours straight but eventually increases that by 75%.  He also increases his speed of 8 mph by 4 mph.  How far can he run now?\nA:",
+	        "rationale": "Let's think step by step. He increases the time he can run by 8*.75=<<8*.75=6>>6 hours\nSo he can now run 8+6=<<8+6=14>>14 hours\nHis speed is now 8+4=<<8+4=12>>12 mph\nSo he can run 14*12=<<14*12=168>>168 miles",
+            "pred_ans": "168"
+        },
+        {
+            "question": "Q: Mrs. Brown paid her utility bills with 3 $50 bills and 2 $10 bills. How much are her utility bills?\nA:",
+            "rationale": "Let's think step by step. Mrs. Brown's $50 bills amount to $50 x 3 = $<<50*3=150>>150.\nHer $10 bills amount to $10 x 2 = $<<10*2=20>>20.\nSo Mrs. Brown's utility bills cost $150 + $20 = $<<150+20=170>>170.",
+            "pred_ans": "170"
+        },
+        {
+            "question": "Q: James trains for the Olympics.  He trains twice a day for 4  hours each time for all but 2 days per week.  How many hours does he train a year?\nA:",
+	        "rationale": "Let's think step by step. He trains 4*2=<<4*2=8>>8 hours per day\nHe trains 7-2=<<7-2=5>>5 days\nSo he trains 8*5=<<8*5=40>>40 hour per week\nThat means he trains 40*52=$<<40*52=2080>>2080",
+            "pred_ans": "2080"
+        }
+    ]
+}

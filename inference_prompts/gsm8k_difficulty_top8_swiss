@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: Saheed made four times as much money as Kayla. Kayla made $30 less than Vika. Vika made $84. How many dollars did Saheed make?\nA:",
+            "rationale": "Let's think step by step. Kayla made $30 less than Vika = $84 - 30 = 54.\nSaheed made 4*Kayla = 4*54 = 216",
+            "pred_ans": "216"
+        },
+        {
+            "question": "Q: A performing magician has a disappearing act where he makes a random member of his audience disappear and reappear. Unfortunately, one-tenth of the time, the audience member never reappears. However, one-fifth of the time, two people reappear instead of only one. If the magician has put on 100 performances of the act this year, how many people have reappeared?\nA:",
+	        "rationale": "Let's think step by step. One-tenth of the time, no one reappears, so there have been 100 / 10 = <<100/10=10>>10 times no one has reappeared.\nOne-fifth of the time, two people reappear, so there have been 100 / 5 = <<100/5=20>>20 times 2 people have reappeared.\nIn those 20 times, 2 * 20 = <<2*20=40>>40 people have reappeared in all.\nThus, there have been 100 - 10 - 20 = <<100-10-20=70>>70 times one person has reappeared.\nTherefore, over 100 acts, 70 + 40 = 100 people have reappeared in all.",
+            "pred_ans": "110"
+        },
+        {
+            "question": "Q: Daisy and Rose were enjoying their backyard pool with their dogs.  If there are 24 legs/paws in the pool, how many dogs do Daisy and Rose have?\nA:",
+    	    "rationale": "Let's think step by step. Daisy and Rose each have 2 legs so between them, they have 2*2 = <<2*2=4>>4 legs\nThere are 24 legs in the pool and 4 belong to Daisy and Rose so there are 24-4 = <<24-4=20>>20 legs in the pool\nDogs have 4 legs and there are 20 legs in the pool so there are 20/4 = 5 dogs in the pool",
+            "pred_ans": "5"
+        },
+        {
+            "question": "Q: Pat is hunting for sharks to take photos. For every photo he takes he earns $15. He sees a shark about every 10 minutes. His boat fuel costs $50 an hour. If he shark hunts for 5 hours, how much money can he expect to make in profit?\nA:",
+	        "rationale": "Let's think step by step. He will use $250 in fuel because 5 x 50 = <<5*50=250>>250\nHe will be shark hunting for 300 minutes because 5 x 60 = <<5*60=300>>300\nHe can expect to see 30 sharks because 300 / 10 = <<300/10=30>>30\nHe will make $450 off these photos because 30 x 15 = <<30*15=450>>450\nHe will make $200 in profit because 450 - 250 = <<450-250=200>>200",
+            "pred_ans": "200"
+        },
+        {
+            "question": "Q: In a northwestern town, it rained 4 inches per day during the first 15 days of November.  For the remainder of the month, the average daily rainfall was twice the amount observed during the first 15 days.  What is the total amount of rainfall for this town in November, in inches?\nA:",
+            "rationale": "Let's think step by step. Since November has 30 days, the town received 4 inches of rain for the first half of the month for 30/2 = 15 days.\nThe total inches of rain that the town received for the 15 days is 15*4 = <<15*4=60>>60 inches.\nThe rain falling in the town increased by 2*4 = <<2*4=8>>8 inches per day for the remaining half of the month.\nTherefore, for the rest of the month, the town received 8*15 = <<8*15=120>>120 inches of rain.\nThe total amount of rain the town received in November is 120+60 = <<120+60=180>>180 inches",
+            "pred_ans": "180"
+        },
+        {
+            "question": "Q: An apple tree produces 40 apples in its first year.  The second year the apple tree produces 8 more than double the amount of apples that it produced the first year, and the third year production went down by a fourth due to an insect infestation.  How many apples did the tree produce in total in the first three years?\nA:",
+	        "rationale": "Let's think step by step. First Year:40 apples\nSecond Year:8+2(40)=88 apples\nThird year:88-88/4=<<88-88/4=66>>66 apples\nTotal 40+88+66=<<40+88+66=194>>194 apples",
+            "pred_ans": "194"
+        },
+        {
+            "question": "Q: It cost 50 dollars to get cats ready for adoption, 100 dollars to get adult dogs ready for adoption, and 150 to get puppies ready for adoption.  If 2 cats, 3 adult dogs, and 2 puppies are adopted what was the cost to get them ready?\nA:",
+            "rationale": "Let's think step by step. The cost to get the cats ready is 2*50=$<<2*50=100>>100\nThe cost to get adult dogs ready is 3*100=$<<3*100=300>>300\nThe cost to get puppies ready is 2*150=$<<2*150=300>>300\nThe total cost is 300+300+100=$<<300+300+100=700>>700",
+            "pred_ans": "700"
+        },
+        {
+            "question": "Q: Zhang is twice as old as Li.  Li is 12 years old.  Zhang's brother Jung is 2 years older than Zhang.  How old is Jung?\nA:",
+	        "rationale": "Let's think step by step. Zhang is 2 * 12 years old = <<2*12=24>>24 years old.\nJung is 2 years + 24 years = <<2+24=26>>26 years old.",
+            "pred_ans": "26"
+        }
+    ]
+}
