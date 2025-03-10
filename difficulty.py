@@ -43,15 +43,15 @@ def main():
 
     start =time.time()
     result, error_cnt = generate_difficulty_qes(args, dataloader)
-    end = time.time()
-    print('Total Execution Time: ', end - start, " seconds")
-    print(f'결과 : {result}')
-    print(f'에러 건 수 : {error_cnt}')
-    # output the results
-    path = f"./uncertainty_result_{args.dataset}_swiss_stage.pkl"
-    with open(path, 'wb') as f:
-        pickle.dump(result, f)
-        print('저장 잘됐다!')
+    # end = time.time()
+    # print('Total Execution Time: ', end - start, " seconds")
+    # print(f'결과 : {result}')
+    # print(f'에러 건 수 : {error_cnt}')
+    # # output the results
+    # path = f"./uncertainty_result_{args.dataset}_swiss_stage.pkl"
+    # with open(path, 'wb') as f:
+    #     pickle.dump(result, f)
+    #     print('저장 잘됐다!')
 
 def generate_difficulty_qes(args, dataloader):
     response_records = []
@@ -62,7 +62,8 @@ def generate_difficulty_qes(args, dataloader):
         prompt_list = [prompt]
         responses = llama3_request(model=args.model, input_prompt=prompt_list, temperature=args.temperature)
         pred_ans = answer_extraction(args, responses)
-        response_record = {'question_idx':q['question_idx'], 'responses':responses}
+        score = 0
+        response_record = {'question_idx':q['question_idx'], 'question': q['question'], 'responses':responses, 'difficulty_score':score}
         
         response_records.append(response_record)
         
@@ -72,13 +73,27 @@ def generate_difficulty_qes(args, dataloader):
     # 스위스 스테이지 토너먼트
     final_questions, error_cnt = swiss_stage_tournament(args, response_records)
 
-    final_questions_idx_list = []
+    # # 난이도 점수 물어보기
+    # final_questions, error_cnt = difficulty_answer(args, response_records)
+
+    final_questions_idx_dict = []
     for i in final_questions:
         final_questions_idx_list.append(i['question_idx'])
 
     return final_questions_idx_list, error_cnt
 
 import random
+
+def difficulty_answer(args, questions):
+    pass
+    # our_prompt = "Please evaluate the difficulty of the following question.\n\
+    #     The difficulty should be rated on a scale from 0 to 100, \
+    #         where 0 represents the easiest question and 100 represents the most difficult question.\n\
+    #             Your response must be strictly in the format: 'The difficulty of this question is {score}.\n\n"
+
+    # for i in range(0, len(questions)):
+    #     input_prompt = our_prompt + 
+    
 
 def swiss_stage_tournament(args, questions, rounds=10):
     our_prompt = "You will assess the difficulty of a question.\n\
@@ -103,7 +118,10 @@ def swiss_stage_tournament(args, questions, rounds=10):
                 # print(f'{round_num}라운드 {i}번째 팀부터는 안할거임')
                 break
 
-            input_prompt = our_prompt + "question_idx: " + str(questions[i]['question_idx']) + '\n' + questions[i]['responses'] + "\n\nquestion_idx: " + str(questions[i+1]['question_idx']) + '\n' + questions[i+1]['responses']
+            input_prompt = our_prompt + "question_idx: " + str(questions[i]['question_idx']) + '\n' + \
+                'Q: ' + questions[i]['question'] + '\n' + 'A: ' + questions[i]['responses'] + \
+                    "\n\nquestion_idx: " + str(questions[i+1]['question_idx']) + '\n' + \
+                        'Q: ' + questions[i+1]['question'] + '\n' + 'A: ' + questions[i+1]['responses']
 
             winner = llama3_request(model=args.model, input_prompt=input_prompt, temperature=args.temperature)
             winner_idx = answer_extraction(args, winner)
