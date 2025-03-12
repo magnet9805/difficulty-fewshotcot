@@ -44,7 +44,7 @@ def main():
     print(f"wrong questions: {wrong_list}")
     # save the wrong predictions
     if args.output_dir is not None:
-        path = f"{args.output_dir}/wrong_{args.dataset}_swiss.txt"
+        path = f"{args.output_dir}/wrong_{args.dataset}_ask_difficulty.txt"
         orginal_stdout = sys.stdout
         with open(path, 'w') as f:
             sys.stdout = f
@@ -52,7 +52,7 @@ def main():
                 print(str(i))
         sys.stdout = orginal_stdout
         
-        path = f"{args.output_dir}/QA_record_{args.dataset}_swiss.txt"
+        path = f"{args.output_dir}/QA_record_{args.dataset}_ask_difficulty.txt"
         with open(path, 'w') as f:
             f.write(json.dumps(QA_record, indent=4))
 
@@ -131,7 +131,7 @@ def arg_parser():
         "--dataset", type=str, default="gsm8k", choices=["gsm8k","svamp", "aqua", "csqa", "asdiv", "last_letters", "addsub", "singleeq", "strategyqa", "multiarith", "time_zone"], help="dataset to inference"
     )
     parser.add_argument(
-        "--prompt_path", type=str, default="./inference_prompts/random_sampling", help="prompts to use"
+        "--prompt_path", type=str, default="./inference_prompts/gsm8k_difficulty_top8_ask", help="prompts to use"
     )
     parser.add_argument(
         "--model", type=str, default="meta-llama/Llama-3.2-1B-Instruct", choices=["text-davinci-002", "code-davinci-002", "text-davinci-003", "gpt-3.5-turbo"], help="model used for decoding."

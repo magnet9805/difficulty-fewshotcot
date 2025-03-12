@@ -1,0 +1,44 @@
+{
+    "prompt": [
+        {
+            "question": "Q: A beadshop earns a third of its profit on Monday, a quarter of its profit on Tuesday and the rest of its profit on Wednesday. The shop makes a total profit of $1,200. How much profit, in dollars, was made on Wednesday?\nA:",
+            "rationale": "Let's think step by step. On Monday, 1200/3=<<1200/3=400>>400 dollars were made.\nOn Tuesday, 1200/4=<<1200/4=300>>300 dollars were made.\nOn Wednesday, 1200-400-300=<<1200-400-300=500>>500 dollars were made.",
+            "pred_ans": "500"
+        },
+        {
+            "question": "Q: Bertha plays tennis. Every ten games, one of her tennis balls wears out. Every five games, she loses a ball. Every four games, she buys a canister of three balls. She started with two balls and gave one to her partner. After twenty games, how many tennis balls does she have?\nA:",
+	        "rationale": "Let's think step by step. Bertha wears out 20 / 10 = <<20/10=2>>2 tennis balls in 20 games.\nShe loses 20 / 5 = <<20/5=4>>4 tennis balls in 20 games.\nShe buys canisters of 3 * 20 / 4 = <<3*20/4=15>>15 tennis balls in 20 games.\nBertha started with 2 balls and gave 1 away, so she has 2 + 15 - 2 - 4 - 1 = <<2+15-2-4-1=10>>10 tennis balls after twenty games.",
+            "pred_ans": "10"
+        },
+        {
+            "question": "Q: A restaurant makes 40 more pizzas than hot dogs every day. If the restaurant makes 60 hot dogs every day, how many pizzas and hot dogs will it make in June?\nA:",
+    	    "rationale": "Let's think step by step. If the restaurant makes 60 hot dogs and 40 more pizzas than hot dogs every day, it makes 60+40 = <<60+40=100>>100 pizzas.\nThe total number of pizzas and hot dogs it makes in a day is 100+60 = <<100+60=160>>160\nIn June, with thirty days, the restaurant will make 30*160 = <<30*160=4800>>4800 pizzas and hot dogs in total.",
+            "pred_ans": "4800"
+        },
+        {
+            "question": "Q: John bakes 12 coconut macaroons, each weighing 5 ounces. He then packs an equal number of the macaroons in 4 different brown bags, ready for delivery. When he briefly leaves the kitchen to pick the phone, his little brother Steve eats the entire contents of one of the brown bags.  What is the total weight, in ounces, of the remaining coconut macaroons?\nA:",
+	        "rationale": "Let's think step by step. Each brown bag has 12/4 = <<12/4=3>>3 macaroons\nAfter Steve eats a bag, there are 12-3 = <<12-3=9>>9 macaroons left\nThe total weight is therefore 9 * 5 = <<9*5=45>>45 ounces.",
+            "pred_ans": "45"
+        },
+        {
+            "question": "Q: A bathroom has 10 6 inch tiles along its width and 20 6 inch tiles along its length.  What is the square footage of the bathroom?\nA:",
+            "rationale": "Let's think step by step. There are 10 tiles that are 6 inches long running the width of the bathroom so it is 10*6 = <<10*6=60>>60 inches long\nThere are 12 inches in a foot and it\u2019s 60 inches wide so it is 60/12 = 5 feet wide\nThere are 20 tiles that are 6 inches long running the length of the bathroom so it\u2019s 20*6 = <<20*6=120>>120 inches long\nThere are 12 inches in a foot and it\u2019s 120 inches long so it is 120/12 = <<120/12=10>>10 feet wide\nThe square footage is l x w so the bathroom has 10*5 = <<10*5=50>>50 sq feet",
+            "pred_ans": "50"
+        },
+        {
+            "question": "Q: Michael has two brothers. His oldest brother is 1 year older than twice Michael's age when Michael was a year younger. His younger brother is 5 years old, which is a third of the age of the older brother. What is their combined age?\nA:",
+	        "rationale": "Let's think step by step. The oldest brother is 15 because 3 x 5 = <<3*5=15>>15\nMichael is 8 because if 1 + (Michael's age - 1) x 2 = 15 then Michael's age = 8\nTheir combined age is 28 because 5 + 15 + 8 = <<5+15+8=28>>28",
+            "pred_ans": "28"
+        },
+        {
+            "question": "Q: Lillian is making chocolate cupcakes to sell at a fundraiser. She only has 3 cups of sugar at home. She goes to the store and buys 2 bags of sugar. Each bag of sugar contains 6 cups. The batter uses 1 cup of sugar per 12 cupcakes. She needs 2 cups of sugar to make enough frosting for a dozen cupcakes. How many dozen cupcakes can she bake and ice with the sugar she has?\nA:",
+            "rationale": "Let's think step by step. The bags of sugar which she bought contain 2 * 6 = <<2*6=12>>12 cups.\nIn total, she has 12 cups + 3 cups = <<12+3=15>>15 cups of sugar to use.\nShe needs 1 cup + 2 cups = <<1+2=3>>3 cups of sugar to make the batter and frosting for a dozen cupcakes.\nLillian has enough sugar to bake and ice 15 / 3 = <<15/3=5>>5 dozen cupcakes.",
+            "pred_ans": "5"
+        },
+        {
+            "question": "Q: Mr. McNeely takes a register of the total number of students present in class every day. On a particular week, the number of students in the class on the second day was 40 more than the first day. The number of students who didn't turn up for the class on the second day was twice the number of students who didn't turn up on the third day. On the third day, 1/7 of the total number of students of the class called in sick. If the total number of students in the class is 280, calculate the number of absent students in the three days.\nA:",
+	        "rationale": "Let's think step by step. On the third day, 1/7*280 = <<1/7*280=40>>40 students called in sick.\nIf the number of students absent on the second day was twice the number on the third day, then 2*40 = <<2*40=80>>80 students didn't show up for the class on the second day.\nThe total number of students present in the class on the second day was 280-80= <<280-80=200>>200.\nIf 40 fewer students showed up for the class on the first day than on the second day, then 200-40 = <<200-40=160>>160 students showed up for the class on the first day.\nThe number of students absent on the first day is 280-160 = <<280-160=120>>120\nIn the three days, the total number of absentees is 120+80+40 = <<120+80+40=240>>240",
+            "pred_ans": "240"
+        }
+    ]
+}
